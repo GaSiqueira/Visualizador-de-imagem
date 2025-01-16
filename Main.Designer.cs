@@ -67,19 +67,20 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(794, 412);
+            this.pictureBox1.Size = new System.Drawing.Size(794, 411);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 421);
+            this.checkBox1.Location = new System.Drawing.Point(3, 420);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(60, 17);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Stretch";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -89,9 +90,9 @@
             this.flowLayoutPanel1.Controls.Add(this.closeButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(123, 421);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(123, 420);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(674, 26);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(674, 27);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // showButton
@@ -104,6 +105,7 @@
             this.showButton.TabIndex = 0;
             this.showButton.Text = "Show a picture";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // clearButton
             // 
@@ -115,6 +117,7 @@
             this.clearButton.TabIndex = 1;
             this.clearButton.Text = "Clear a picture";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // backgroundButton
             // 
@@ -126,6 +129,7 @@
             this.backgroundButton.TabIndex = 2;
             this.backgroundButton.Text = "Set the background color";
             this.backgroundButton.UseVisualStyleBackColor = true;
+            this.backgroundButton.Click += new System.EventHandler(this.backgroundButton_Click);
             // 
             // closeButton
             // 
@@ -137,6 +141,7 @@
             this.closeButton.TabIndex = 3;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // openFileDialog1
             // 
